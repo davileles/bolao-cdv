@@ -275,6 +275,14 @@
           <div id="chart-placar"></div>
         </div>
 
+
+        <!-- Gráfico: Placar Brasil x Haiti -->
+        <div class="table-wrap" style="padding:20px">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px">&#x26BD; Placar — Brasil x Haiti</div>
+          <div style="font-size:0.78rem;color:var(--gray);margin-bottom:16px">Apostas dos participantes</div>
+          <div id="chart-haiti"></div>
+        </div>
+
         <!-- Gráfico: Campeão -->
         <div class="table-wrap" style="padding:20px">
           <div style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px">&#x1F3C6; Seleção Campeã</div>
@@ -286,7 +294,7 @@
 
       <!-- Nota de rodapé -->
       <div style="text-align:center;font-size:0.75rem;color:var(--gray);padding-bottom:32px">
-        Dados referentes às apostas da Rodada 1. Atualizado pela organização.
+        Dados referentes às apostas das Rodadas 1 e 2. Atualizado pela organização.
       </div>
     </div>
   </div>
@@ -316,6 +324,17 @@ var APOSTAS_CAMPEAO = [
   {label:'Argentina', val:1, cor:'#74ACDF'}
 ];
 
+var APOSTAS_HAITI = [
+  {label:"3x0", val:10},
+  {label:"4x1", val:5},
+  {label:"4x0", val:4},
+  {label:"3x1", val:4},
+  {label:"5x0", val:4},
+  {label:"2x0", val:4},
+  {label:"5x1", val:3},
+  {label:"Outros", val:6}
+];
+
 function renderBarChart(containerId, data, colorFn) {
   var container = document.getElementById(containerId);
   if (!container) return;
@@ -342,6 +361,7 @@ function renderBarChart(containerId, data, colorFn) {
 // Renderizar na inicialização da aba
 document.addEventListener('DOMContentLoaded', function() {
   renderBarChart('chart-placar', APOSTAS_PLACARES, null);
+    renderBarChart('chart-haiti', APOSTAS_HAITI, null);
   renderBarChart('chart-campeao', APOSTAS_CAMPEAO, null);
 });
 
@@ -349,82 +369,374 @@ document.addEventListener('DOMContentLoaded', function() {
 // RANKING DATA — atualizado pela organização
 // =============================================
 window.RANKING_DATA = {
-  "lastUpdate": "14/06/2026",
-  "gamesProcessed": 1,
+  "lastUpdate": "19/06/2026",
+  "gamesProcessed": 2,
   "participants": [
-    {"name":"Guilherme - 2044","points":10,"exactScores":1},
-    {"name":"Renata - 4112","points":10,"exactScores":1},
-    {"name":"Lucas - 0916","points":5,"exactScores":0},
-    {"name":"Adriano - 9999","points":2,"exactScores":0},
-    {"name":"Aline - 9666","points":2,"exactScores":0},
-    {"name":"Ana - 2213","points":2,"exactScores":0},
-    {"name":"Caio - 5743","points":2,"exactScores":0},
-    {"name":"Carolina - 9151","points":2,"exactScores":0},
-    {"name":"Claudio - 7663","points":2,"exactScores":0},
-    {"name":"Cristiani - 3136","points":2,"exactScores":0},
-    {"name":"Dandara - 6845","points":2,"exactScores":0},
-    {"name":"Davi - 4886","points":2,"exactScores":0},
-    {"name":"Diogo - 5971","points":2,"exactScores":0},
-    {"name":"Eduardo - 2868","points":2,"exactScores":0},
-    {"name":"Elvis - 6048","points":2,"exactScores":0},
-    {"name":"Emmanuel - 6696","points":2,"exactScores":0},
-    {"name":"Erika - 5643","points":2,"exactScores":0},
-    {"name":"Felipe - 7782","points":2,"exactScores":0},
-    {"name":"Francisco - 7139","points":2,"exactScores":0},
-    {"name":"Gabriel - 0290","points":2,"exactScores":0},
-    {"name":"Gabriel - 4115","points":2,"exactScores":0},
-    {"name":"Gian - 8748","points":2,"exactScores":0},
-    {"name":"Guilherme - 4885","points":2,"exactScores":0},
-    {"name":"Gustavo - 3744","points":2,"exactScores":0},
-    {"name":"Igor - 6098","points":2,"exactScores":0},
-    {"name":"Ivan - 3454","points":2,"exactScores":0},
-    {"name":"Jonathan - 2034","points":2,"exactScores":0},
-    {"name":"Joyce - 6428","points":2,"exactScores":0},
-    {"name":"João - 0234","points":2,"exactScores":0},
-    {"name":"Leonardo - 0872","points":2,"exactScores":0},
-    {"name":"Leonardo - 5443","points":2,"exactScores":0},
-    {"name":"Lucas - 0101","points":2,"exactScores":0},
-    {"name":"Luciane - 8095","points":2,"exactScores":0},
-    {"name":"Marco - 6484","points":2,"exactScores":0},
-    {"name":"Mariana - 4234","points":2,"exactScores":0},
-    {"name":"Mario - 171","points":2,"exactScores":0},
-    {"name":"Matheus - 0157","points":2,"exactScores":0},
-    {"name":"Mário - 3538","points":2,"exactScores":0},
-    {"name":"Narjara - 9441","points":2,"exactScores":0},
-    {"name":"Natalia - 3015","points":2,"exactScores":0},
-    {"name":"Nathiele - 4872","points":2,"exactScores":0},
-    {"name":"Patrick - 9055","points":2,"exactScores":0},
-    {"name":"Paulo - 2644","points":2,"exactScores":0},
-    {"name":"Pedro - 9592","points":2,"exactScores":0},
-    {"name":"Phillipe - 4138","points":2,"exactScores":0},
-    {"name":"RICARDO - 0279","points":2,"exactScores":0},
-    {"name":"Ricardão - 6569","points":2,"exactScores":0},
-    {"name":"Rodrigo - 8332","points":2,"exactScores":0},
-    {"name":"Samella - 4362","points":2,"exactScores":0},
-    {"name":"Sandy - 5112","points":2,"exactScores":0},
-    {"name":"Simone - 2918","points":2,"exactScores":0},
-    {"name":"Thales - 7879","points":2,"exactScores":0},
-    {"name":"Victor - 7373","points":2,"exactScores":0},
-    {"name":"Vinicius - 2916","points":2,"exactScores":0},
-    {"name":"Wellington - 5551","points":2,"exactScores":0},
-    {"name":"Alexandre - 3537","points":0,"exactScores":0},
-    {"name":"Augusto - 1631","points":0,"exactScores":0},
-    {"name":"DIEGO - 7816","points":0,"exactScores":0},
-    {"name":"Daniel - 9224","points":0,"exactScores":0},
-    {"name":"Eduardo - 1320","points":0,"exactScores":0},
-    {"name":"Erica - 2487","points":0,"exactScores":0},
-    {"name":"Felipe - 4739","points":0,"exactScores":0},
-    {"name":"Graziele - 2508","points":0,"exactScores":0},
-    {"name":"Gustavo - 7951","points":0,"exactScores":0},
-    {"name":"Kassio - 2131","points":0,"exactScores":0},
-    {"name":"Leandro - 7514","points":0,"exactScores":0},
-    {"name":"Ludmilla - 9768","points":0,"exactScores":0},
-    {"name":"Marisa - 0430","points":0,"exactScores":0},
-    {"name":"PAULO - 6033","points":0,"exactScores":0},
-    {"name":"Poliana - 7154","points":0,"exactScores":0},
-    {"name":"Rafael - 6659","points":0,"exactScores":0},
-    {"name":"Rodolfo - 7325","points":0,"exactScores":0},
-    {"name":"William - 6667","points":0,"exactScores":0}
+    {
+      "name": "Lucas - 0916",
+      "points": 19,
+      "exactScores": 1
+    },
+    {
+      "name": "Guilherme - 2044",
+      "points": 17,
+      "exactScores": 1
+    },
+    {
+      "name": "Davi - 4886",
+      "points": 16,
+      "exactScores": 1
+    },
+    {
+      "name": "Matheus - 0157",
+      "points": 16,
+      "exactScores": 1
+    },
+    {
+      "name": "Sandy - 5112",
+      "points": 16,
+      "exactScores": 1
+    },
+    {
+      "name": "Augusto - 1631",
+      "points": 14,
+      "exactScores": 1
+    },
+    {
+      "name": "Graziele - 2508",
+      "points": 14,
+      "exactScores": 1
+    },
+    {
+      "name": "Kassio - 2131",
+      "points": 14,
+      "exactScores": 1
+    },
+    {
+      "name": "Leandro - 7514",
+      "points": 14,
+      "exactScores": 1
+    },
+    {
+      "name": "Rodolfo - 7325",
+      "points": 14,
+      "exactScores": 1
+    },
+    {
+      "name": "Renata - 4112",
+      "points": 10,
+      "exactScores": 1
+    },
+    {
+      "name": "Aline - 9666",
+      "points": 9,
+      "exactScores": 0
+    },
+    {
+      "name": "Ana - 2213",
+      "points": 9,
+      "exactScores": 0
+    },
+    {
+      "name": "Caio - 5743",
+      "points": 9,
+      "exactScores": 0
+    },
+    {
+      "name": "Elvis - 6048",
+      "points": 9,
+      "exactScores": 0
+    },
+    {
+      "name": "Felipe - 7782",
+      "points": 9,
+      "exactScores": 0
+    },
+    {
+      "name": "Guilherme - 4885",
+      "points": 9,
+      "exactScores": 0
+    },
+    {
+      "name": "Igor - 6098",
+      "points": 9,
+      "exactScores": 0
+    },
+    {
+      "name": "Jonathan - 2034",
+      "points": 9,
+      "exactScores": 0
+    },
+    {
+      "name": "Mário - 3538",
+      "points": 9,
+      "exactScores": 0
+    },
+    {
+      "name": "Pedro - 9592",
+      "points": 9,
+      "exactScores": 0
+    },
+    {
+      "name": "Vinicius - 2916",
+      "points": 9,
+      "exactScores": 0
+    },
+    {
+      "name": "Carolina - 9151",
+      "points": 7,
+      "exactScores": 0
+    },
+    {
+      "name": "Felipe - 4739",
+      "points": 7,
+      "exactScores": 0
+    },
+    {
+      "name": "Gustavo - 7951",
+      "points": 7,
+      "exactScores": 0
+    },
+    {
+      "name": "Ivan - 3454",
+      "points": 7,
+      "exactScores": 0
+    },
+    {
+      "name": "Joyce - 6428",
+      "points": 7,
+      "exactScores": 0
+    },
+    {
+      "name": "Mariana - 4234",
+      "points": 7,
+      "exactScores": 0
+    },
+    {
+      "name": "Natalia - 3015",
+      "points": 7,
+      "exactScores": 0
+    },
+    {
+      "name": "Patrick - 9055",
+      "points": 7,
+      "exactScores": 0
+    },
+    {
+      "name": "Poliana - 7154",
+      "points": 7,
+      "exactScores": 0
+    },
+    {
+      "name": "RICARDO - 0279",
+      "points": 7,
+      "exactScores": 0
+    },
+    {
+      "name": "Rodrigo - 8332",
+      "points": 7,
+      "exactScores": 0
+    },
+    {
+      "name": "Simone - 2918",
+      "points": 7,
+      "exactScores": 0
+    },
+    {
+      "name": "Erica - 2487",
+      "points": 5,
+      "exactScores": 0
+    },
+    {
+      "name": "Adriano - 9999",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Claudio - 7663",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Cristiani - 3136",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Dandara - 6845",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Diogo - 5971",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Eduardo - 2868",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Emmanuel - 6696",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Erika - 5643",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Francisco - 7139",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Gabriel - 0290",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Gabriel - 4115",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Gian - 8748",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Gustavo - 3744",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "João - 0234",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Leonardo - 0872",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Leonardo - 5443",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Lucas - 0101",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Luciane - 8095",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Marco - 6484",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Mario - 171",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Narjara - 9441",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Nathiele - 4872",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Paulo - 2644",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Phillipe - 4138",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Ricardão - 6569",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Samella - 4362",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Thales - 7879",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Victor - 7373",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Wellington - 5551",
+      "points": 2,
+      "exactScores": 0
+    },
+    {
+      "name": "Alexandre - 3537",
+      "points": 0,
+      "exactScores": 0
+    },
+    {
+      "name": "DIEGO - 7816",
+      "points": 0,
+      "exactScores": 0
+    },
+    {
+      "name": "Daniel - 9224",
+      "points": 0,
+      "exactScores": 0
+    },
+    {
+      "name": "Eduardo - 1320",
+      "points": 0,
+      "exactScores": 0
+    },
+    {
+      "name": "Ludmilla - 9768",
+      "points": 0,
+      "exactScores": 0
+    },
+    {
+      "name": "Marisa - 0430",
+      "points": 0,
+      "exactScores": 0
+    },
+    {
+      "name": "PAULO - 6033",
+      "points": 0,
+      "exactScores": 0
+    },
+    {
+      "name": "Rafael - 6659",
+      "points": 0,
+      "exactScores": 0
+    },
+    {
+      "name": "William - 6667",
+      "points": 0,
+      "exactScores": 0
+    }
   ]
 };
 // =============================================
@@ -437,6 +749,7 @@ function switchTab(name, btn) {
   if (name === 'apostas') {
     setTimeout(function() {
       renderBarChart('chart-placar', APOSTAS_PLACARES, null);
+    renderBarChart('chart-haiti', APOSTAS_HAITI, null);
       renderBarChart('chart-campeao', APOSTAS_CAMPEAO, null);
     }, 50);
   }
