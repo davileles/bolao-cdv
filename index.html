@@ -173,6 +173,7 @@
             <th style="text-align:center">🇲🇦 Marrocos</th>
             <th style="text-align:center">🇭🇹 Haiti</th>
             <th style="text-align:center">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Escócia</th>
+            <th style="text-align:center">🇯🇵 Japão</th>
             <th style="text-align:right">Total</th>
           </tr></thead>
           <tbody id="ranking-tbody"></tbody>
@@ -380,494 +381,560 @@ document.addEventListener('DOMContentLoaded', function() {
 // RANKING DATA — atualizado pela organização
 // =============================================
 window.RANKING_DATA = {
-  "lastUpdate": "24/06/2026",
-  "gamesProcessed": 3,
+  "lastUpdate": "29/06/2026",
+  "gamesProcessed": 4,
   "participants": [
     {
       "name": "Guilherme - 2044",
-      "points": 22,
+      "points": 29,
       "exactScores": 1,
-      "games": {"m":{"pts":10,"pal":"1x1","exato":true,"razao":"Placar exato"},"h":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Lucas - 0916",
-      "points": 22,
-      "exactScores": 1,
-      "games": {"m":{"pts":5,"pal":"2x2","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠1), gols adv. (2≠1)"},"h":{"pts":10,"pal":"3x0","exato":true,"razao":"Placar exato"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 10, "pal": "1x1", "exato": true, "razao": "Placar exato"}, "h": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
     },
     {
       "name": "Davi - 4886",
-      "points": 19,
-      "exactScores": 1,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":10,"pal":"3x0","exato":true,"razao":"Placar exato"},"e":{"pts":7,"pal":"1x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (1≠3)"}}
-    },
-    {
-      "name": "Matheus - 0157",
-      "points": 19,
-      "exactScores": 1,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":10,"pal":"3x0","exato":true,"razao":"Placar exato"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
-    },
-    {
-      "name": "Graziele - 2508",
-      "points": 17,
-      "exactScores": 1,
-      "games": {"m":{"pts":0,"pal":"2x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"},"h":{"pts":10,"pal":"3x0","exato":true,"razao":"Placar exato"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
+      "points": 29,
+      "exactScores": 2,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 10, "pal": "3x0", "exato": true, "razao": "Placar exato"}, "e": {"pts": 7, "pal": "1x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (1≠3), 0 gols adv."}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
     },
     {
       "name": "Leandro - 7514",
-      "points": 17,
-      "exactScores": 1,
-      "games": {"m":{"pts":0,"pal":"2x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"},"h":{"pts":10,"pal":"3x0","exato":true,"razao":"Placar exato"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
-    },
-    {
-      "name": "Rodolfo - 7325",
-      "points": 17,
-      "exactScores": 1,
-      "games": {"m":{"pts":0,"pal":"2x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"},"h":{"pts":10,"pal":"3x0","exato":true,"razao":"Placar exato"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
+      "points": 27,
+      "exactScores": 2,
+      "games": {"m": {"pts": 0, "pal": "2x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"}, "h": {"pts": 10, "pal": "3x0", "exato": true, "razao": "Placar exato"}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
     },
     {
       "name": "Sandy - 5112",
-      "points": 17,
+      "points": 27,
+      "exactScores": 2,
+      "games": {"m": {"pts": 2, "pal": "3x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), 1 gols adv."}, "h": {"pts": 10, "pal": "3x0", "exato": true, "razao": "Placar exato"}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Lucas - 0916",
+      "points": 27,
       "exactScores": 1,
-      "games": {"m":{"pts":2,"pal":"3x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (3≠1)"},"h":{"pts":10,"pal":"3x0","exato":true,"razao":"Placar exato"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 5, "pal": "2x2", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠1), ✗ gols adv. (2≠1)"}, "h": {"pts": 10, "pal": "3x0", "exato": true, "razao": "Placar exato"}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 5, "pal": "1x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (1≠2), ✗ gols adv. (0≠1)"}}
     },
     {
-      "name": "Simone - 2918",
-      "points": 17,
+      "name": "Matheus - 0157",
+      "points": 26,
       "exactScores": 1,
-      "games": {"m":{"pts":2,"pal":"3x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (3≠1)"},"h":{"pts":5,"pal":"4x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (4≠3), gols adv. (1≠0)"},"e":{"pts":10,"pal":"3x0","exato":true,"razao":"Placar exato"}}
-    },
-    {
-      "name": "Aline - 9666",
-      "points": 16,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"},"e":{"pts":7,"pal":"1x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (1≠3)"}}
-    },
-    {
-      "name": "Ana - 2213",
-      "points": 16,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"},"e":{"pts":7,"pal":"1x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (1≠3)"}}
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 10, "pal": "3x0", "exato": true, "razao": "Placar exato"}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
     },
     {
       "name": "Elvis - 6048",
-      "points": 16,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":7,"pal":"4x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (4≠3)"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
-    },
-    {
-      "name": "Felipe - 7782",
-      "points": 16,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":7,"pal":"5x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (5≠3)"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
+      "points": 26,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 7, "pal": "4x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠3), 0 gols adv."}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
     },
     {
       "name": "Guilherme - 4885",
+      "points": 26,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 7, "pal": "5x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (5≠3), 0 gols adv."}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Rodolfo - 7325",
+      "points": 24,
+      "exactScores": 1,
+      "games": {"m": {"pts": 0, "pal": "2x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"}, "h": {"pts": 10, "pal": "3x0", "exato": true, "razao": "Placar exato"}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | 2 gols Brasil, ✗ gols adv. (0≠1)"}}
+    },
+    {
+      "name": "Caio - 5743",
+      "points": 24,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "3x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), 1 gols adv."}, "h": {"pts": 7, "pal": "5x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (5≠3), 0 gols adv."}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Simone - 2918",
+      "points": 24,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "3x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), 1 gols adv."}, "h": {"pts": 5, "pal": "4x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠3), ✗ gols adv. (1≠0)"}, "e": {"pts": 10, "pal": "3x0", "exato": true, "razao": "Placar exato"}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Felipe - 4739",
+      "points": 24,
+      "exactScores": 1,
+      "games": {"m": {"pts": 0, "pal": "2x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"}, "h": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Natalia - 3015",
+      "points": 24,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "1x0", "exato": false, "razao": "✗ errou o resultado, 1 gols Brasil, gols adv. (0≠1)"}, "h": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Graziele - 2508",
+      "points": 24,
+      "exactScores": 1,
+      "games": {"m": {"pts": 0, "pal": "2x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"}, "h": {"pts": 10, "pal": "3x0", "exato": true, "razao": "Placar exato"}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | 2 gols Brasil, ✗ gols adv. (0≠1)"}}
+    },
+    {
+      "name": "Carolina - 9151",
+      "points": 24,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 5, "pal": "4x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠3), ✗ gols adv. (1≠0)"}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Aline - 9666",
+      "points": 23,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "e": {"pts": 7, "pal": "1x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (1≠3), 0 gols adv."}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Vinicius - 2916",
+      "points": 23,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 7, "pal": "4x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠3), 0 gols adv."}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Felipe - 7782",
+      "points": 23,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 7, "pal": "5x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (5≠3), 0 gols adv."}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Augusto - 1631",
+      "points": 22,
+      "exactScores": 1,
+      "games": {"m": {"pts": 0, "pal": "2x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"}, "h": {"pts": 10, "pal": "3x0", "exato": true, "razao": "Placar exato"}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | 2 gols Brasil, ✗ gols adv. (0≠1)"}}
+    },
+    {
+      "name": "Wellington - 5551",
+      "points": 22,
+      "exactScores": 2,
+      "games": {"m": {"pts": 2, "pal": "3x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 10, "pal": "3x0", "exato": true, "razao": "Placar exato"}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Ricardo - 0279",
+      "points": 21,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "3x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), 1 gols adv."}, "h": {"pts": 5, "pal": "5x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (5≠3), ✗ gols adv. (1≠0)"}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Gustavo - 7951",
+      "points": 21,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "4x2", "exato": false, "razao": "✗ errou o resultado, gols Brasil (4≠1), gols adv. (2≠1)"}, "h": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Pedro - 9592",
+      "points": 21,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "1x0", "exato": false, "razao": "✗ errou o resultado, 1 gols Brasil, gols adv. (0≠1)"}, "h": {"pts": 7, "pal": "5x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (5≠3), 0 gols adv."}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 5, "pal": "1x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (1≠2), ✗ gols adv. (0≠1)"}}
+    },
+    {
+      "name": "Patrick - 9055",
+      "points": 21,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "3x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), 1 gols adv."}, "h": {"pts": 5, "pal": "5x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (5≠3), ✗ gols adv. (1≠0)"}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Igor - 6098",
+      "points": 21,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "4x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (4≠1), 1 gols adv."}, "h": {"pts": 7, "pal": "4x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠3), 0 gols adv."}, "e": {"pts": 5, "pal": "4x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | 2 gols Brasil, ✗ gols adv. (0≠1)"}}
+    },
+    {
+      "name": "Ana - 2213",
+      "points": 21,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "e": {"pts": 7, "pal": "1x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (1≠3), 0 gols adv."}, "j": {"pts": 5, "pal": "3x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), ✗ gols adv. (0≠1)"}}
+    },
+    {
+      "name": "Diogo - 5971",
+      "points": 19,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Thales - 7879",
+      "points": 19,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "3x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 10, "pal": "3x0", "exato": true, "razao": "Placar exato"}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Paulo - 2644",
+      "points": 19,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Claudio - 7663",
+      "points": 19,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "1x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (1≠3), 0 gols adv."}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Dandara - 6845",
+      "points": 19,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Rodrigo - 8332",
+      "points": 19,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 5, "pal": "6x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (6≠3), ✗ gols adv. (1≠0)"}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Erika - 5643",
+      "points": 19,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Joyce - 6428",
+      "points": 17,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "e": {"pts": 0, "pal": "1x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (1≠3), gols adv. (1≠0)"}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Leonardo - 5443",
+      "points": 17,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Emmanuel - 6696",
+      "points": 17,
+      "exactScores": 1,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Ana - 4955",
+      "points": 17,
+      "exactScores": 1,
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
+    },
+    {
+      "name": "Gian - 8748",
       "points": 16,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":7,"pal":"5x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (5≠3)"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Gabriel - 0290",
+      "points": 16,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | 2 gols Brasil, ✗ gols adv. (0≠1)"}}
+    },
+    {
+      "name": "Luciane - 8095",
+      "points": 16,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Adriano - 9999",
+      "points": 16,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | 2 gols Brasil, ✗ gols adv. (0≠1)"}}
     },
     {
       "name": "Jonathan - 2034",
       "points": 16,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
-      "name": "Pedro - 9592",
+      "name": "Poliana - 7154",
       "points": 16,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"1x0","exato":false,"razao":"✓ 1 gols Brasil | ✗ resultado, gols adv. (0≠1)"},"h":{"pts":7,"pal":"5x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (5≠3)"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 0, "pal": "2x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"}, "h": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 2, "pal": "0x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (0≠2), 1 gols adv."}}
     },
     {
-      "name": "Vinicius - 2916",
-      "points": 16,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":7,"pal":"4x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (4≠3)"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
-    },
-    {
-      "name": "Augusto - 1631",
+      "name": "William - 6667",
       "points": 15,
       "exactScores": 1,
-      "games": {"m":{"pts":0,"pal":"2x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"},"h":{"pts":10,"pal":"3x0","exato":true,"razao":"Placar exato"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 0, "pal": "2x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
     },
     {
-      "name": "Caio - 5743",
-      "points": 14,
+      "name": "Erica - 2487",
+      "points": 15,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"3x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (3≠1)"},"h":{"pts":7,"pal":"5x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (5≠3)"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Carolina - 9151",
-      "points": 14,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":5,"pal":"4x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (4≠3), gols adv. (1≠0)"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
-    },
-    {
-      "name": "Felipe - 3862",
-      "points": 14,
-      "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"h":{"pts":7,"pal":"4x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (4≠3)"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
-    },
-    {
-      "name": "Felipe - 4739",
-      "points": 14,
-      "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"2x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"},"h":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
-    },
-    {
-      "name": "Gustavo - 7951",
-      "points": 14,
-      "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"4x2","exato":false,"razao":"✗ errou o resultado, gols Brasil (4≠1), gols adv. (2≠1)"},"h":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
-    },
-    {
-      "name": "Igor - 6098",
-      "points": 14,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"4x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (4≠1)"},"h":{"pts":7,"pal":"4x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (4≠3)"},"e":{"pts":5,"pal":"4x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (4≠3), gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 0, "pal": "7x2", "exato": false, "razao": "✗ errou o resultado, gols Brasil (7≠1), gols adv. (2≠1)"}, "h": {"pts": 5, "pal": "5x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (5≠3), ✗ gols adv. (1≠0)"}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 5, "pal": "3x2", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), ✗ gols adv. (2≠1)"}}
     },
     {
       "name": "Mariana - 4234",
       "points": 14,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"3x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (3≠1)"},"h":{"pts":5,"pal":"4x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (4≠3), gols adv. (1≠0)"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 2, "pal": "3x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), 1 gols adv."}, "h": {"pts": 5, "pal": "4x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠3), ✗ gols adv. (1≠0)"}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
+    },
+    {
+      "name": "Ludmilla - 9768",
+      "points": 14,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "2x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | 2 gols Brasil, ✗ gols adv. (0≠1)"}}
+    },
+    {
+      "name": "Kassio - 2131",
+      "points": 14,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "4x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (4≠1), gols adv. (0≠1)"}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | 2 gols Brasil, ✗ gols adv. (0≠1)"}}
     },
     {
       "name": "Mário - 3538",
       "points": 14,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
-      "name": "Natalia - 3015",
+      "name": "Felipe - 3862",
       "points": 14,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"1x0","exato":false,"razao":"✓ 1 gols Brasil | ✗ resultado, gols adv. (0≠1)"},"h":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 7, "pal": "4x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠3), 0 gols adv."}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
-      "name": "Patrick - 9055",
-      "points": 14,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"3x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (3≠1)"},"h":{"pts":5,"pal":"5x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (5≠3), gols adv. (1≠0)"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Poliana - 7154",
-      "points": 14,
-      "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"2x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"},"h":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Ricardo - 0279",
-      "points": 14,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"3x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (3≠1)"},"h":{"pts":5,"pal":"5x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (5≠3), gols adv. (1≠0)"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Mario - 7171",
+      "name": "Nathiele - 4872",
       "points": 12,
       "exactScores": 1,
-      "games": {"m":{"pts":2,"pal":"3x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (3≠1)"},"h":{"pts":10,"pal":"3x0","exato":true,"razao":"Placar exato"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
     },
     {
-      "name": "Thales - 7879",
-      "points": 12,
-      "exactScores": 1,
-      "games": {"m":{"pts":2,"pal":"3x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (3≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":10,"pal":"3x0","exato":true,"razao":"Placar exato"}}
-    },
-    {
-      "name": "Wellington - 5551",
-      "points": 12,
-      "exactScores": 1,
-      "games": {"m":{"pts":2,"pal":"3x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (3≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":10,"pal":"3x0","exato":true,"razao":"Placar exato"}}
-    },
-    {
-      "name": "Rodrigo - 8332",
+      "name": "Leonardo - 0872",
       "points": 12,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":5,"pal":"6x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (6≠3), gols adv. (1≠0)"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 2, "pal": "1x2", "exato": false, "razao": "✗ errou o resultado, 1 gols Brasil, gols adv. (2≠1)"}, "h": {"pts": 5, "pal": "7x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (7≠3), ✗ gols adv. (1≠0)"}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 5, "pal": "4x2", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠2), ✗ gols adv. (2≠1)"}}
+    },
+    {
+      "name": "Eduardo - 2868",
+      "points": 12,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "4x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (4≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "2x2", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠3), gols adv. (2≠0)"}, "e": {"pts": 5, "pal": "4x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 5, "pal": "4x3", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠2), ✗ gols adv. (3≠1)"}}
+    },
+    {
+      "name": "Anderson - 0419",
+      "points": 12,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Marcia - 2981",
+      "points": 12,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | 2 gols Brasil, ✗ gols adv. (0≠1)"}}
     },
     {
       "name": "Renata - 4112",
       "points": 10,
       "exactScores": 1,
-      "games": {"m":{"pts":10,"pal":"1x1","exato":true,"razao":"Placar exato"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
-    },
-    {
-      "name": "Erica - 2487",
-      "points": 10,
-      "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"7x2","exato":false,"razao":"✗ errou o resultado, gols Brasil (7≠1), gols adv. (2≠1)"},"h":{"pts":5,"pal":"5x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (5≠3), gols adv. (1≠0)"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 10, "pal": "1x1", "exato": true, "razao": "Placar exato"}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
       "name": "Yuri - 5855",
       "points": 10,
       "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"h":{"pts":5,"pal":"4x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (4≠3), gols adv. (1≠0)"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 5, "pal": "4x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠3), ✗ gols adv. (1≠0)"}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
-      "name": "Adriano - 9999",
-      "points": 9,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
+      "name": "Mario - 7171",
+      "points": 10,
+      "exactScores": 1,
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 10, "pal": "3x0", "exato": true, "razao": "Placar exato"}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
-      "name": "Claudio - 7663",
-      "points": 9,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"1x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (1≠3)"}}
+      "name": "Janaína - 9811",
+      "points": 10,
+      "exactScores": 1,
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 10, "pal": "2x1", "exato": true, "razao": "Placar exato"}}
     },
     {
-      "name": "Dandara - 6845",
+      "name": "Cristiani - 3136",
       "points": 9,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Diogo - 5971",
-      "points": 9,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Erika - 5643",
-      "points": 9,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Gabriel - 0290",
-      "points": 9,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
-    },
-    {
-      "name": "Gian - 8748",
-      "points": 9,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | 2 gols Brasil, ✗ gols adv. (0≠1)"}}
     },
     {
       "name": "João - 0234",
       "points": 9,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"3x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (3≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"4x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (4≠3)"}}
-    },
-    {
-      "name": "Luciane - 8095",
-      "points": 9,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Paulo - 2644",
-      "points": 9,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
-    },
-    {
-      "name": "Alexandre - 3537",
-      "points": 7,
-      "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"3x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (3≠1), gols adv. (0≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
-    },
-    {
-      "name": "Ana - 4955",
-      "points": 7,
-      "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
-    },
-    {
-      "name": "Diego - 7816",
-      "points": 7,
-      "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"3x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (3≠1), gols adv. (0≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"5x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (5≠3)"}}
-    },
-    {
-      "name": "Eduardo - 2868",
-      "points": 7,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"4x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (4≠1)"},"h":{"pts":0,"pal":"2x2","exato":false,"razao":"✗ errou o resultado, gols Brasil (2≠3), gols adv. (2≠0)"},"e":{"pts":5,"pal":"4x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (4≠3), gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Emmanuel - 6696",
-      "points": 7,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Ivan - 3454",
-      "points": 7,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"3x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (3≠1)"},"h":{"pts":5,"pal":"4x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (4≠3), gols adv. (1≠0)"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
-    },
-    {
-      "name": "Joyce - 6428",
-      "points": 7,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"},"e":{"pts":0,"pal":"1x1","exato":false,"razao":"✗ errou o resultado, gols Brasil (1≠3), gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Kassio - 2131",
-      "points": 7,
-      "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"4x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (4≠1), gols adv. (0≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"2x0","exato":false,"razao":"✓ resultado, 0 gols adv. | ✗ gols Brasil (2≠3)"}}
-    },
-    {
-      "name": "Leonardo - 0872",
-      "points": 7,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"1x2","exato":false,"razao":"✓ 1 gols Brasil | ✗ resultado, gols adv. (2≠1)"},"h":{"pts":5,"pal":"7x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (7≠3), gols adv. (1≠0)"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
-    },
-    {
-      "name": "Leonardo - 5443",
-      "points": 7,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Ludmilla - 9768",
-      "points": 7,
-      "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"2x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Marco - 6484",
-      "points": 7,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"1x0","exato":false,"razao":"✓ 1 gols Brasil | ✗ resultado, gols adv. (0≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":5,"pal":"4x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (4≠3), gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Mario - 3538",
-      "points": 7,
-      "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":7,"pal":"3x1","exato":false,"razao":"✓ resultado, 3 gols Brasil | ✗ gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 2, "pal": "3x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "4x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠3), 0 gols adv."}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
       "name": "Samella - 4362",
       "points": 7,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"1x2","exato":false,"razao":"✓ 1 gols Brasil | ✗ resultado, gols adv. (2≠1)"},"h":{"pts":0,"pal":"2x2","exato":false,"razao":"✗ errou o resultado, gols Brasil (2≠3), gols adv. (2≠0)"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 2, "pal": "1x2", "exato": false, "razao": "✗ errou o resultado, 1 gols Brasil, gols adv. (2≠1)"}, "h": {"pts": 0, "pal": "2x2", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠3), gols adv. (2≠0)"}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 0, "pal": "1x2", "exato": false, "razao": "✗ errou o resultado, gols Brasil (1≠2), gols adv. (2≠1)"}}
     },
     {
-      "name": "Anderson - 0419",
-      "points": 5,
+      "name": "Marco - 6484",
+      "points": 7,
       "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 2, "pal": "1x0", "exato": false, "razao": "✗ errou o resultado, 1 gols Brasil, gols adv. (0≠1)"}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 5, "pal": "4x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
+    },
+    {
+      "name": "Diego - 7816",
+      "points": 7,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "3x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), gols adv. (0≠1)"}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "5x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (5≠3), 0 gols adv."}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
+    },
+    {
+      "name": "Ivan - 3454",
+      "points": 7,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "3x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), 1 gols adv."}, "h": {"pts": 5, "pal": "4x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (4≠3), ✗ gols adv. (1≠0)"}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
       "name": "Livia - 1111",
-      "points": 5,
+      "points": 7,
       "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 2, "pal": "2x3", "exato": false, "razao": "✗ errou o resultado, 2 gols Brasil, gols adv. (3≠1)"}}
     },
     {
-      "name": "Marcia - 2981",
-      "points": 5,
+      "name": "Alexandre - 2537",
+      "points": 7,
       "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), 0 gols adv."}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
+    },
+    {
+      "name": "#VALUE!",
+      "points": 7,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | 3 gols Brasil, ✗ gols adv. (1≠0)"}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
+    },
+    {
+      "name": "Mario - 3538",
+      "points": 7,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Gian - 748",
+      "points": 7,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Leonardo - 4595",
+      "points": 7,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Andrey - 6925",
+      "points": 7,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | 2 gols Brasil, ✗ gols adv. (0≠1)"}}
+    },
+    {
+      "name": "Kevin - 7001",
+      "points": 7,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
+    },
+    {
+      "name": "Crisriani - 3136",
+      "points": 7,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 7, "pal": "2x0", "exato": false, "razao": "✓ resultado | 2 gols Brasil, ✗ gols adv. (0≠1)"}}
+    },
+    {
+      "name": "Adailton - 2008",
+      "points": 7,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 7, "pal": "3x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), 1 gols adv."}}
     },
     {
       "name": "Paulo - 1278",
       "points": 5,
       "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 5, "pal": "2x1", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (2≠3), ✗ gols adv. (1≠0)"}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
-      "name": "William - 6667",
+      "name": "Givaldo - 6885",
       "points": 5,
       "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"2x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":5,"pal":"2x1","exato":false,"razao":"✓ resultado | ✗ gols Brasil (2≠3), gols adv. (1≠0)"}}
-    },
-    {
-      "name": "Cristiani - 3136",
-      "points": 2,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
-    },
-    {
-      "name": "Francisco - 7139",
-      "points": 2,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
-    },
-    {
-      "name": "Gabriel - 4115",
-      "points": 2,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
-    },
-    {
-      "name": "Gustavo - 3744",
-      "points": 2,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"3x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (3≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
-    },
-    {
-      "name": "Lucas - 0101",
-      "points": 2,
-      "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
+      "games": {"m": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 5, "pal": "3x0", "exato": false, "razao": "✓ resultado | ✗ gols Brasil (3≠2), ✗ gols adv. (0≠1)"}}
     },
     {
       "name": "Narjara - 9441",
       "points": 2,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
-      "name": "Nathiele - 4872",
+      "name": "Lucas - 0101",
       "points": 2,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
+    },
+    {
+      "name": "Gustavo - 3744",
+      "points": 2,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "3x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
       "name": "Phillipe - 4138",
       "points": 2,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
+    },
+    {
+      "name": "Mario - 171",
+      "points": 2,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "3x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
       "name": "Ricardão - 6569",
       "points": 2,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"2x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
+    },
+    {
+      "name": "Gabriel - 4115",
+      "points": 2,
+      "exactScores": 0,
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
       "name": "Victor - 7373",
       "points": 2,
       "exactScores": 0,
-      "games": {"m":{"pts":2,"pal":"3x1","exato":false,"razao":"✓ 1 gols adv. | ✗ resultado, gols Brasil (3≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
+      "games": {"m": {"pts": 2, "pal": "3x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
-      "name": "Daniel - 9224",
-      "points": 0,
+      "name": "Francisco - 7139",
+      "points": 2,
       "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"3x2","exato":false,"razao":"✗ errou o resultado, gols Brasil (3≠1), gols adv. (2≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
+      "games": {"m": {"pts": 2, "pal": "2x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), 1 gols adv."}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
       "name": "Eduardo - 1320",
       "points": 0,
       "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"2x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
+      "games": {"m": {"pts": 0, "pal": "2x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
-      "name": "Marisa - 0430",
+      "name": "Daniel - 9224",
       "points": 0,
       "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"2x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
+      "games": {"m": {"pts": 0, "pal": "3x2", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), gols adv. (2≠1)"}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
       "name": "Paulo - 6033",
       "points": 0,
       "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"2x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"},"h":{"pts":0,"pal":"1x1","exato":false,"razao":"✗ errou o resultado, gols Brasil (1≠3), gols adv. (1≠0)"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
+      "games": {"m": {"pts": 0, "pal": "2x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"}, "h": {"pts": 0, "pal": "1x1", "exato": false, "razao": "✗ errou o resultado, gols Brasil (1≠3), gols adv. (1≠0)"}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     },
     {
       "name": "Rafael - 6659",
       "points": 0,
       "exactScores": 0,
-      "games": {"m":{"pts":0,"pal":"3x0","exato":false,"razao":"✗ errou o resultado, gols Brasil (3≠1), gols adv. (0≠1)"},"h":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"},"e":{"pts":0,"pal":"—","exato":false,"razao":"Sem palpite"}}
+      "games": {"m": {"pts": 0, "pal": "3x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), gols adv. (0≠1)"}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
+    },
+    {
+      "name": "Marisa - 0430",
+      "points": 0,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "2x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (2≠1), gols adv. (0≠1)"}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
+    },
+    {
+      "name": "Alexandre - 3537",
+      "points": 0,
+      "exactScores": 0,
+      "games": {"m": {"pts": 0, "pal": "3x0", "exato": false, "razao": "✗ errou o resultado, gols Brasil (3≠1), gols adv. (0≠1)"}, "h": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "e": {"pts": 0, "pal": "-", "exato": false, "razao": ""}, "j": {"pts": 0, "pal": "-", "exato": false, "razao": ""}}
     }
   ]
 };
@@ -945,6 +1012,7 @@ function renderRanking(data) {
         renderGameCell(g.m) +
         renderGameCell(g.h) +
         renderGameCell(g.e) +
+        renderGameCell(g.j) +
         '<td style="text-align:right"><span class="pts-cell">' + p.points + '</span></td>' +
       '</tr>';
   });
