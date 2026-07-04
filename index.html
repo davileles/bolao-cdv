@@ -170,6 +170,7 @@
           <thead><tr>
             <th>#</th>
             <th>Participante</th>
+            <th style="text-align:center">Total</th>
             <th style="text-align:center">🇲🇦 Marrocos</th>
             <th style="text-align:center">🇭🇹 Haiti</th>
             <th style="text-align:center">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Escócia</th>
@@ -178,7 +179,6 @@
             <th style="text-align:center">🇫🇷 França</th>
             <th style="text-align:center">🇪🇸 Espanha</th>
             <th style="text-align:center">🇦🇷 Argentina</th>
-            <th style="text-align:right">Total</th>
           </tr></thead>
           <tbody id="ranking-tbody"></tbody>
         </table>
@@ -278,29 +278,69 @@
       <!-- Hero -->
       <div class="ranking-hero" style="margin-bottom:20px">
         <h2>&#x1F4CA; Painel de Apostas</h2>
-
       </div>
 
       <!-- Grid de gráficos -->
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:28px">
 
-        <!-- Gráfico: Placar Brasil x Marrocos -->
+        <!-- Brasil x Marrocos -->
         <div class="table-wrap" style="padding:20px">
-          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px">&#x26BD; Placar — Brasil x Marrocos</div>
-          <div style="font-size:0.78rem;color:var(--gray);margin-bottom:16px">Apostas dos participantes</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px">&#x26BD; Brasil x Marrocos</div>
+          <div style="font-size:0.78rem;color:var(--gray);margin-bottom:16px">Resultado: 1x1 — Apostas dos participantes</div>
           <div id="chart-placar"></div>
         </div>
 
-
-        <!-- Gráfico: Placar Brasil x Haiti -->
+        <!-- Brasil x Haiti -->
         <div class="table-wrap" style="padding:20px">
-          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px">&#x26BD; Placar — Brasil x Haiti</div>
-          <div style="font-size:0.78rem;color:var(--gray);margin-bottom:16px">Apostas dos participantes</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px">&#x26BD; Brasil x Haiti</div>
+          <div style="font-size:0.78rem;color:var(--gray);margin-bottom:16px">Resultado: 3x0 — Apostas dos participantes</div>
           <div id="chart-haiti"></div>
         </div>
 
-        <!-- Gráfico: Campeão -->
+        <!-- Brasil x Escócia -->
         <div class="table-wrap" style="padding:20px">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px">&#x26BD; Brasil x Escócia</div>
+          <div style="font-size:0.78rem;color:var(--gray);margin-bottom:16px">Resultado: 3x0 — Apostas dos participantes</div>
+          <div id="chart-escocia"></div>
+        </div>
+
+        <!-- Brasil x Japão -->
+        <div class="table-wrap" style="padding:20px">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px">&#x26BD; Brasil x Japão</div>
+          <div style="font-size:0.78rem;color:var(--gray);margin-bottom:16px">Resultado: 2x1 — Apostas dos participantes</div>
+          <div id="chart-japao"></div>
+        </div>
+
+        <!-- Alemanha x Paraguai -->
+        <div class="table-wrap" style="padding:20px">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px">&#x26BD; Alemanha x Paraguai</div>
+          <div style="font-size:0.78rem;color:var(--gray);margin-bottom:16px">Resultado: 1x1 — Apostas dos participantes</div>
+          <div id="chart-alemanha"></div>
+        </div>
+
+        <!-- França x Suécia -->
+        <div class="table-wrap" style="padding:20px">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px">&#x26BD; França x Suécia</div>
+          <div style="font-size:0.78rem;color:var(--gray);margin-bottom:16px">Resultado: 3x0 — Apostas dos participantes</div>
+          <div id="chart-franca"></div>
+        </div>
+
+        <!-- Espanha x Áustria -->
+        <div class="table-wrap" style="padding:20px">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px">&#x26BD; Espanha x Áustria</div>
+          <div style="font-size:0.78rem;color:var(--gray);margin-bottom:16px">Resultado: 3x0 — Apostas dos participantes</div>
+          <div id="chart-espanha"></div>
+        </div>
+
+        <!-- Argentina x Cabo Verde -->
+        <div class="table-wrap" style="padding:20px">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px">&#x26BD; Argentina x Cabo Verde</div>
+          <div style="font-size:0.78rem;color:var(--gray);margin-bottom:16px">Resultado: 3x2 — Apostas dos participantes</div>
+          <div id="chart-argentina"></div>
+        </div>
+
+        <!-- Campeão (largura total) -->
+        <div class="table-wrap" style="padding:20px;grid-column:1/-1">
           <div style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px">&#x1F3C6; Seleção Campeã</div>
           <div style="font-size:0.78rem;color:var(--gray);margin-bottom:16px">Favorita dos participantes</div>
           <div id="chart-campeao"></div>
@@ -310,7 +350,7 @@
 
       <!-- Nota de rodapé -->
       <div style="text-align:center;font-size:0.75rem;color:var(--gray);padding-bottom:32px">
-        Dados referentes às apostas das Rodadas 1 e 2. Atualizado pela organização.
+        Dados referentes a todas as rodadas disputadas. Atualizado pela organização.
       </div>
     </div>
   </div>
@@ -320,35 +360,54 @@
 <script>
 // Dados das apostas
 var APOSTAS_PLACARES = [
-  {label:'2x1', val:32},
-  {label:'3x1', val:14},
-  {label:'2x0', val:11},
-  {label:'3x0', val:3},
-  {label:'1x0', val:3},
-  {label:'1x2', val:2},
-  {label:'1x1', val:2},
-  {label:'Outros', val:6}
+  {label:'2x1', val:32},{label:'3x1', val:14},{label:'2x0', val:11},
+  {label:'3x0', val:3},{label:'1x0', val:3},{label:'1x2', val:2},
+  {label:'1x1', val:2},{label:'Outros', val:6}
+];
+var APOSTAS_HAITI = [
+  {label:"3x0", val:10},{label:"4x1", val:5},{label:"4x0", val:4},
+  {label:"3x1", val:4},{label:"5x0", val:4},{label:"2x0", val:4},
+  {label:"5x1", val:3},{label:"Outros", val:6}
+];
+var APOSTAS_ESCOCIA = [
+  {label:'2x1', val:20},{label:'2x0', val:18},{label:'3x1', val:16},
+  {label:'1x0', val:4},{label:'3x0', val:4},{label:'4x1', val:3},
+  {label:'2x3', val:1},{label:'Outros', val:3}
+];
+var APOSTAS_JAPAO = [
+  {label:'2x1', val:33},{label:'3x1', val:28},{label:'2x0', val:17},
+  {label:'3x0', val:5},{label:'1x0', val:3},{label:'4x2', val:2},
+  {label:'4x3', val:2},{label:'Outros', val:5}
+];
+var APOSTAS_ALEMANHA = [
+  {label:'2x0', val:12},{label:'3x1', val:8},{label:'3x0', val:8},
+  {label:'2x1', val:5},{label:'4x1', val:4},{label:'4x0', val:4},
+  {label:'1x1', val:2},{label:'Outros', val:8}
+];
+var APOSTAS_FRANCA = [
+  {label:'3x0', val:14},{label:'3x1', val:11},{label:'2x0', val:7},
+  {label:'2x1', val:7},{label:'3x2', val:3},{label:'4x0', val:3},
+  {label:'4x1', val:2},{label:'Outros', val:4}
+];
+var APOSTAS_ESPANHA = [
+  {label:'2x0', val:15},{label:'2x1', val:12},{label:'1x0', val:7},
+  {label:'3x1', val:7},{label:'3x0', val:5},{label:'4x1', val:2},
+  {label:'1x2', val:1},{label:'Outros', val:2}
+];
+var APOSTAS_ARGENTINA = [
+  {label:'3x0', val:17},{label:'4x0', val:9},{label:'2x0', val:7},
+  {label:'3x1', val:3},{label:'1x1', val:3},{label:'4x1', val:2},
+  {label:'4x2', val:2},{label:'Outros', val:8}
 ];
 var APOSTAS_CAMPEAO = [
   {label:'Brasil', val:23, cor:'#009C3B'},
   {label:'Espanha', val:22, cor:'#C60B1E'},
-  {label:'França', val:15, cor:'#0055A4'},
+  {label:'França', val:17, cor:'#0055A4'},
   {label:'Portugal', val:6, cor:'#006600'},
   {label:'Inglaterra', val:3, cor:'#CF081F'},
   {label:'Holanda', val:2, cor:'#FF6600'},
   {label:'Colômbia', val:1, cor:'#FCD116'},
   {label:'Argentina', val:1, cor:'#74ACDF'}
-];
-
-var APOSTAS_HAITI = [
-  {label:"3x0", val:10},
-  {label:"4x1", val:5},
-  {label:"4x0", val:4},
-  {label:"3x1", val:4},
-  {label:"5x0", val:4},
-  {label:"2x0", val:4},
-  {label:"5x1", val:3},
-  {label:"Outros", val:6}
 ];
 
 function renderBarChart(containerId, data, colorFn) {
@@ -376,9 +435,15 @@ function renderBarChart(containerId, data, colorFn) {
 
 // Renderizar na inicialização da aba
 document.addEventListener('DOMContentLoaded', function() {
-  renderBarChart('chart-placar', APOSTAS_PLACARES, null);
-    renderBarChart('chart-haiti', APOSTAS_HAITI, null);
-  renderBarChart('chart-campeao', APOSTAS_CAMPEAO, null);
+  renderBarChart('chart-placar',   APOSTAS_PLACARES, null);
+  renderBarChart('chart-haiti',    APOSTAS_HAITI,    null);
+  renderBarChart('chart-escocia',  APOSTAS_ESCOCIA,  null);
+  renderBarChart('chart-japao',    APOSTAS_JAPAO,    null);
+  renderBarChart('chart-alemanha', APOSTAS_ALEMANHA, null);
+  renderBarChart('chart-franca',   APOSTAS_FRANCA,   null);
+  renderBarChart('chart-espanha',  APOSTAS_ESPANHA,  null);
+  renderBarChart('chart-argentina',APOSTAS_ARGENTINA,null);
+  renderBarChart('chart-campeao',  APOSTAS_CAMPEAO,  null);
 });
 
 // =============================================
@@ -4429,7 +4494,15 @@ function switchTab(name, btn) {
     setTimeout(function() {
       renderBarChart('chart-placar', APOSTAS_PLACARES, null);
     renderBarChart('chart-haiti', APOSTAS_HAITI, null);
-      renderBarChart('chart-campeao', APOSTAS_CAMPEAO, null);
+      renderBarChart('chart-placar',   APOSTAS_PLACARES, null);
+      renderBarChart('chart-haiti',    APOSTAS_HAITI,    null);
+      renderBarChart('chart-escocia',  APOSTAS_ESCOCIA,  null);
+      renderBarChart('chart-japao',    APOSTAS_JAPAO,    null);
+      renderBarChart('chart-alemanha', APOSTAS_ALEMANHA, null);
+      renderBarChart('chart-franca',   APOSTAS_FRANCA,   null);
+      renderBarChart('chart-espanha',  APOSTAS_ESPANHA,  null);
+      renderBarChart('chart-argentina',APOSTAS_ARGENTINA,null);
+      renderBarChart('chart-campeao',  APOSTAS_CAMPEAO,  null);
     }, 50);
   }
 }
@@ -4497,7 +4570,7 @@ function renderRanking(data) {
         renderGameCell(g.jj) +
         renderGameCell(g.k) +
         renderGameCell(g.l) +
-        '<td style="text-align:right"><span class="pts-cell">' + p.points + '</span></td>' +
+        '<td style="text-align:center"><span class="pts-cell">' + p.points + '</span></td>' +
       '</tr>';
   });
 
