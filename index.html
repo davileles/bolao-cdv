@@ -71,27 +71,44 @@
 
   /* TABLE */
   .table-wrap { background:linear-gradient(135deg,#0D1B36,var(--navy)); border:1px solid rgba(255,255,255,0.08); border-radius:12px; overflow:hidden; }
-  table { width:100%; border-collapse:collapse; }
+  .ranking-table-wrap { overflow:hidden; border-radius:12px; }
+  .table-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; width:100%; }
+  .table-scroll::-webkit-scrollbar { height:6px; }
+  .table-scroll::-webkit-scrollbar-track { background:rgba(255,255,255,0.04); }
+  .table-scroll::-webkit-scrollbar-thumb { background:var(--gold); border-radius:3px; }
+  table { width:max-content; min-width:100%; border-collapse:collapse; }
   thead tr { background:rgba(201,168,76,0.12); }
-  thead th { padding:14px 16px; text-align:left; font-size:0.7rem; letter-spacing:2px; text-transform:uppercase; color:var(--gold); font-weight:700; }
+  thead th { padding:12px 10px; text-align:left; font-size:0.7rem; letter-spacing:1px; text-transform:uppercase; color:var(--gold); font-weight:700; white-space:nowrap; }
   thead th:last-child { text-align:center; }
+  /* Colunas fixas: #, Participante, Total */
+  thead th:nth-child(1),
+  tbody td:nth-child(1) { position:sticky; left:0; z-index:3; background:#0D1B36; width:36px; min-width:36px; max-width:36px; }
+  thead th:nth-child(2),
+  tbody td:nth-child(2) { position:sticky; left:36px; z-index:3; background:#0D1B36; min-width:150px; max-width:180px; }
+  thead th:nth-child(3),
+  tbody td:nth-child(3) { position:sticky; left:186px; z-index:3; background:#0D1B36; min-width:64px; box-shadow:4px 0 10px rgba(0,0,0,0.5); }
+  thead th:nth-child(1), thead th:nth-child(2), thead th:nth-child(3) { background:rgba(10,22,46,0.99); z-index:4; }
   .game-cell { text-align:center; }
-  .game-pts { font-family:'Bebas Neue',sans-serif; font-size:1.2rem; line-height:1; }
+  .game-pts { font-family:'Bebas Neue',sans-serif; font-size:1.1rem; line-height:1; }
   .game-pts.exato { color:#4ADE80; }
   .game-pts.parcial { color:var(--gold-light); }
   .game-pts.zero { color:var(--gray); }
-  .game-pal { font-size:0.72rem; color:var(--gray); margin-top:2px; }
-  .game-razao { font-size:0.68rem; color:rgba(255,255,255,0.45); margin-top:2px; max-width:130px; margin-left:auto; margin-right:auto; line-height:1.3; }
+  .game-pal { font-size:0.7rem; color:var(--gray); margin-top:2px; }
+  .game-razao { font-size:0.62rem; color:rgba(255,255,255,0.45); margin-top:2px; max-width:110px; margin-left:auto; margin-right:auto; line-height:1.3; }
   .game-razao .ok { color:#4ADE80; }
   .game-razao .err { color:#f87171; }
   tbody tr { border-top:1px solid rgba(255,255,255,0.05); transition:background 0.15s; }
   tbody tr:hover { background:rgba(255,255,255,0.04); }
-  tbody td { padding:14px 16px; font-size:0.9rem; }
-  tbody td:last-child { text-align:right; }
+  tbody tr:hover td:nth-child(1),
+  tbody tr:hover td:nth-child(2),
+  tbody tr:hover td:nth-child(3) { background:rgba(255,255,255,0.04); }
+  tbody td { padding:12px 10px; font-size:0.9rem; }
+  tbody td:last-child { text-align:center; }
   .rank-num { font-family:'Bebas Neue',sans-serif; font-size:1.2rem; color:var(--gray); }
   .rank-num.top3 { color:var(--gold); }
-  .participant-name { font-weight:600; }
+  .participant-name { font-weight:600; font-size:0.85rem; }
   .pts-cell { font-family:'Bebas Neue',sans-serif; font-size:1.4rem; color:var(--gold-light); }
+  .pts-col { min-width:60px; }
 
   /* EMPTY */
   .empty-state { text-align:center; padding:64px 24px; background:linear-gradient(135deg,#0D1B36,var(--navy)); border:1px solid rgba(255,255,255,0.06); border-radius:16px; }
@@ -128,6 +145,14 @@
     .points-grid { grid-template-columns:1fr; }
     .prizes-grid { grid-template-columns:1fr; }
     .reg-body { padding:20px; }
+    .content { padding:16px 8px 60px; }
+    thead th:nth-child(2), tbody td:nth-child(2) { min-width:120px; max-width:120px; left:32px; }
+    thead th:nth-child(3), tbody td:nth-child(3) { left:152px; min-width:56px; }
+    .game-razao { display:none; }
+    .participant-name { font-size:0.78rem; }
+    .game-pts { font-size:1rem; }
+    .game-pal { font-size:0.65rem; }
+    .podium-name { font-size:0.85rem; }
   }
 </style>
 </head>
@@ -165,11 +190,13 @@
 
     <div id="ranking-section" style="display:none">
       <div class="podium" id="podium"></div>
-      <div class="table-wrap">
+      <div class="table-wrap ranking-table-wrap">
+        <div class="table-scroll">
         <table>
           <thead><tr>
             <th>#</th>
             <th>Participante</th>
+            <th class="pts-col" style="text-align:center">Total</th>
             <th style="text-align:center" title="Brasil x Marrocos">🇧🇷🇲🇦</th>
             <th style="text-align:center" title="Brasil x Haiti">🇧🇷🇭🇹</th>
             <th style="text-align:center" title="Brasil x Escócia">🇧🇷🏴󠁧󠁢󠁳󠁣󠁴󠁿</th>
@@ -182,10 +209,10 @@
             <th style="text-align:center" title="Brasil x Noruega">🇧🇷🇳🇴</th>
             <th style="text-align:center" title="Espanha x Portugal">🇪🇸🇵🇹</th>
             <th style="text-align:center" title="Argentina x Egito">🇦🇷🇪🇬</th>
-            <th style="text-align:center">Total</th>
           </tr></thead>
           <tbody id="ranking-tbody"></tbody>
         </table>
+        </div>
       </div>
     </div>
 
@@ -7842,6 +7869,7 @@ function renderRanking(data) {
         '<td><span class="participant-name">' + p.name + '</span>' +
           (p.exactScores > 0 ? '<br><span class="exact-badge" style="margin-top:4px;display:inline-block">&#x1F3AF; ' + p.exactScores + ' exato' + (p.exactScores>1?'s':'') + '</span>' : '') +
         '</td>' +
+        '<td class="pts-col" style="text-align:center"><span class="pts-cell">' + p.points + '</span></td>' +
         renderGameCell(g.m) +
         renderGameCell(g.h) +
         renderGameCell(g.e) +
@@ -7853,8 +7881,7 @@ function renderRanking(data) {
         renderGameCell(g.n) +
         renderGameCell(g.o) +
         renderGameCell(g.p) +
-        renderGameCell(g.q) +
-        '<td style="text-align:center"><span class="pts-cell">' + p.points + '</span></td>' +
+        renderGameCell(g.q)
       '</tr>';
   });
 
