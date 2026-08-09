@@ -1,0 +1,14 @@
+{
+  "limiarRemocao": 150,
+  "arquivos": {
+    "index.html": {
+      "minLinhas": 8946,
+      "obrigatorio": [
+        "function renderBarChart(",
+        "function renderGameCell(",
+        "function renderRanking(",
+        "function switchTab("
+      ]
+    }
+  }
+}
